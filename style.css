@@ -1,0 +1,5 @@
+/*
+Theme Name: dandelion
+*/
+@import "style/common.css";
+@import url(style/sp.css) screen and (max-width: 999px);

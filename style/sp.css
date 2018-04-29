@@ -1,0 +1,169 @@
+
+.innerWrapper {
+  width: 90%;
+}
+
+header ul {
+	width: 43%;
+  left: -43%;
+  position: fixed;
+  flex-direction: column;
+  justify-content: baseline;
+  background-color: #222;
+  height: 100% !important;
+  margin-left: -5%;
+  padding: 0 20px;
+  transition-duration: .5s;
+  z-index: 100;
+}
+
+header ul.active {
+	left: 5%;
+}
+
+.layer.modal {
+	z-index: 99;
+	background-color: #000;
+	position: fixed;
+	display: none;
+  opacity: .7;
+}
+
+.layer.modal.active {
+	display: block;
+}
+
+header.scrolled .only_sp {
+  line-height: 70px;
+}
+
+header.scrolled .only_sp svg {
+	color: #ff9800;
+}
+
+header a {
+	line-height: 80px !important;
+  color: #fff !important;
+}
+
+.only_sp {
+	display: inline-block;
+  padding: 0 20px;
+  line-height: 100px;
+	transition-duration: .3s;
+}
+
+.only_sp svg {
+	color: #fff;
+	transition-duration: .3s;
+	vertical-align: middle;
+}
+
+.mainContent h1 {
+  font-size: 54px;
+  margin-bottom: 25px;
+}
+
+.mainContent h1::after {
+  height: 6px;
+  width: 200px;
+}
+
+.mainContent p {
+  margin-bottom: 60px;
+}
+
+.activityContent li {
+	max-width: 400px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.activityContent li:last-child {
+  margin-bottom: 0;
+}
+
+.activityContent li img {
+  width: 40%;
+}
+
+.activityContent li p {
+  margin-top: 30px;
+}
+
+.greek {
+	flex-direction: column-reverse;
+	overflow: hidden;
+}
+
+.greek .leftContent, .greek .rightContent {
+  width: 90%;
+	margin: 0 auto;
+  overflow: visible;
+}
+
+ .greek .leftContent {
+	 width: 100%;
+	 height: 250px;
+	 position: relative;
+ }
+
+.greek img {
+	min-width: 602px;
+	width: 150%;
+	max-width: 902px;
+  position: absolute;
+  bottom: 0;
+  left: -96px;
+}
+
+.greek .rightContent {
+  padding: 90px 0;
+}
+
+.greek h2 {
+	text-align: center;
+}
+
+
+.header {
+  height: 200px;
+}
+
+.introMember {
+  margin: 0;
+}
+
+.introMember li {
+	margin: 0 auto;
+  width: 90%;
+  max-width: 270px;
+  margin-bottom: 60px;
+}
+
+.introMember .content {
+  padding: 20px;
+}
+
+.introMember .content h4 {
+  font-weight: bold;
+}
+
+.contact .linkButton {
+	width: 90%;
+  font-size: 17px;
+	padding: 30px;
+}
+
+.portfolioWrapper {
+	margin-bottom: 30px;
+}
+
+.portfolioWrapper .portfolio {
+	margin: 30px auto;
+}
+
+.portfolioWrapper .portfolio .img {
+  width: 100%;
+  height: 180px;
+}
