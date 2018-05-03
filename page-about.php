@@ -21,10 +21,7 @@
   </div>
 </section>
 
-<section class="greek section">
-  <div class="leftContent">
-    <img src="<?php echo esc_url( get_template_directory_uri().'/image/yuki_big.png' ) ?>" alt="代表の写真">
-  </div>
+<section class="greek section cf">
   <div class="rightContent">
     <h2>MESSAGE</h2>
     <p>
@@ -41,13 +38,14 @@
       太田有紀
     </p>
   </div>
+  <div class="layer background leftContent" style="background-image: url(<?php echo esc_url( get_template_directory_uri().'/image/yuki_bg.jpg' ) ?>);"></div>
 </section>
 
 <section class="section">
   <div class="innerWrapper">
     <h2>MEMBER</h2>
     <?php
-      $arr = array('executive', 'engineer', 'salse');
+      $arr = array('executive', 'engineer', 'salse', 'advertisement');
       foreach ($arr as $position_slug):
       $position = get_term_by( 'slug', $position_slug, 'positioncat' );
       $paged = (int) get_query_var('paged');

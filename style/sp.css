@@ -102,23 +102,20 @@ header a {
   overflow: visible;
 }
 
- .greek .leftContent {
-	 width: 100%;
-	 height: 250px;
-	 position: relative;
- }
+.greek .leftContent {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  transform: scale(1.2);
+}
 
-.greek img {
-	min-width: 602px;
-	width: 150%;
-	max-width: 902px;
-  position: absolute;
-  bottom: 0;
-  left: -96px;
+.greek .background {
+  background-position: left;
 }
 
 .greek .rightContent {
   padding: 90px 0;
+  float: none;
 }
 
 .greek h2 {
@@ -166,4 +163,27 @@ header a {
 .portfolioWrapper .portfolio .img {
   width: 100%;
   height: 180px;
+}
+
+.single .singleRight {
+	width: 100%;
+  margin: 60px 0;
+}
+
+.portfolioWrapper {
+	margin-bottom: 30px;
+}
+
+.portfolioWrapper .portfolio {
+	margin: 30px auto;
+}
+
+.portfolioWrapper .portfolio .img {
+  width: 100%;
+  height: 180px;
+}
+
+.single .singleRight {
+	width: 100%;
+  margin: 60px 0;
 }

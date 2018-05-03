@@ -6,7 +6,7 @@
   <div class="layer background" style="background-image: url(<?php echo esc_url( get_template_directory_uri().'/image/main.jpg' ) ?>);"></div>
 </section>
 
-<section class="section about">
+<section class="section">
   <div class="innerWrapper">
     <h2>NEWS</h2>
     <ul class="newsWrapper">
@@ -41,7 +41,7 @@
         <?php endwhile; endif; ?>
       </ul>
     <div class="buttonZone">
-      <a link='#' class="linkButton">詳細を見る</a>
+      <a href='http://dandelion.weblike.jp/news' class="linkButton">詳細を見る</a>
     </div>
   </div>
 </section>
@@ -57,7 +57,7 @@
       学生たちがそれぞれの得意を掛け合わせ、社会で活躍する中で成長していくことを促進する団体です。
     </p>
     <div class="buttonZone">
-      <a link='#' class="linkButton">詳細を見る</a>
+      <a href='http://dandelion.weblike.jp/about' class="linkButton">詳細を見る</a>
     </div>
   </div>
 </section>
@@ -104,14 +104,11 @@
     </ul>
   </div>
   <div class="buttonZone">
-    <a link='#' class="linkButton">制作事例はこちら</a>
+    <a href='http://dandelion.weblike.jp/portfolio' class="linkButton">制作事例はこちら</a>
   </div>
 </section>
 
-<section class="greek section">
-  <div class="leftContent">
-    <img src="<?php echo esc_url( get_template_directory_uri().'/image/yuki_big.png' ) ?>" alt="代表の写真">
-  </div>
+<section class="greek section cf">
   <div class="rightContent">
     <h2>MESSAGE</h2>
     <p>
@@ -128,9 +125,10 @@
       太田有紀
     </p>
   </div>
+  <div class="layer background leftContent" style="background-image: url(<?php echo esc_url( get_template_directory_uri().'/image/yuki_bg.jpg' ) ?>);"></div>
 </section>
 
 <section class="section contact">
-  <a link='#' class="linkButton">お問い合わせ・お見積もりはこちら</a>
+  <a href='#' class="linkButton">お問い合わせ・お見積もりはこちら</a>
 </section>
 <?php get_footer(); ?>

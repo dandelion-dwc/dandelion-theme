@@ -98,6 +98,20 @@ body {
   background-color: #f8f8f8;
 }
 
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
 /*----------------------------------------------------------------*/
 .innerWrapper {
   width: 1000px;
@@ -296,28 +310,30 @@ header.scrolled a {
 
 .greek {
   padding: 0;
-  display: flex;
-}
-
-.greek .leftContent, .greek .rightContent {
-  width: 50%;
-  overflow: hidden;
+	z-index: -3;
 	position: relative;
 }
 
-.greek img {
-	width: 902px;
-  position: absolute;
-  bottom: 0;
-	left: -83px;
+.greek .rightContent {
+  width: calc(50% - 80px);
+  overflow: hidden;
+	position: relative;
+	padding: 90px 0;
+	float: right;
 }
 
-.greek .rightContent {
-  padding: 90px 0;
+.greek .leftContent {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .greek p, .greek h2 {
   text-align: left;
+}
+
+.greek p {
+	color: #333;
 }
 
 .newsWrapper ul {
@@ -444,4 +460,61 @@ footer {
 .portfolioWrapper .portfolio .description {
   text-align: left;
   padding: 10px 20px
+}
+
+.singleLeft {
+	max-width: 700px;
+	width: 100%;
+	margin: 60px 0;
+}
+
+.singleLeft h2 {
+	font-size: 30px;
+  padding: 10px;
+  color: #444;
+  background-color: rgba( 255, 152, 0, .15);
+  border-left: 7px solid #ff9800;
+  margin: 30px 0;
+}
+
+.singleLeft h3 {
+	margin: 20px;
+	font-size: 26px;
+}
+
+.single .innerWrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.single .singleLeft p {
+	margin: 20px;
+  line-height: 1.6;
+}
+.single .singleLeft img {
+	width: 100%;
+}
+
+.singleRight {
+	width: 250px;
+  margin: 60px 0;
+}
+
+.singleRight h3 {
+	border-bottom: 1px solid #888;
+	margin: 20px 0;
+}
+
+.singleRight li {
+	margin: 10px;
+}
+
+.singleRight a {
+	text-decoration: none;
+	transition-duration: .2s;
+}
+
+.singleRight a:hover {
+	text-decoration: underline;
 }
